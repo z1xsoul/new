@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hello Sayo!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>💖 Pindutin mo lang AHAHAHA 💖</h1>
+            <p>Click the button below and listen to music 
+                (Please don't spam AHAHAH)</p>
+
+        
+            <div id="musicProgressContainer">
+                <span id="currentTime">0:00</span>
+                <input type="range" id="musicProgress" value="0" min="0" step="1">
+                <span id="totalTime">0:00</span>
+            </div>
+
+            <button id="generateMessage">Start</button>
+            <div id="messageDisplay"></div>
+
+            
+            <img id="displayImage" class="insert-image" src="image/default.jpg" alt="image" style="display:none;">
+
+            <audio id="backgroundMusic" loop></audio>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
+    </html>

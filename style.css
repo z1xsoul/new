@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to right, #f07fd7, pink, #FFF5E1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-size: 400% 400%;
+    animation: background1 10s ease-in-out infinite;
+}
+
+@keyframes background1 {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #D63384;
+}
+
+button {
+    background: linear-gradient(to bottom, pink, #ff0000);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #C2185B;
+}
+
+
+#musicProgressContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#musicProgress {
+    width: 50%;
+    appearance: none;
+    height: 5px;
+    background: pink;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#musicProgress::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#currentTime, #totalTime {
+    font-size: 14px;
+    color: #D63384;
+}
+
+
+.insert-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
